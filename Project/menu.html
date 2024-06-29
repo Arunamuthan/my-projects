@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background:url("images/about1.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+    .nav-item{
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 30px;
+        color: rgb(211, 146, 6);
+       }
+       .nav-item:hover{
+        background-color: white;
+        color: rgb(211, 146, 6);
+       }
+       .navbar-brand{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+       }
+       .headline{
+        font-size: 50px;
+        font-weight: bold;
+        padding-left: 50px;
+    }
+       @media (max-width:600px) {
+        .headline{
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            padding-left: 5px;
+        }
+
+       }
+    
+    .column{
+        border: solid;
+        border-radius: 30px;
+        align-items: center;
+        background-color:rgb(83, 1, 26);
+        padding: 4px 20px;
+        border-radius: 30px;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .column:hover{
+        transform: rotate3d(180d);
+        background-color: blue;
+        box-shadow: 50%;
+
+    }
+    .dishes{
+        flex-wrap: wrap;
+    }
+    h2{
+        border: solid;
+        background-color: white;
+        text-align: center;
+    }
+    .container1{
+        list-style: none;
+        justify-content: space-between;
+        background-color: lightcoral;
+        font-size: 20px;
+    }
+    .container11{
+        display: flex;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .iconsimg{
+        animation:fadeIn 2s forwards ease-in-out infinite alternate;  
+    }
+    .iconsimg1{
+        animation:fadeIn 2s forwards ease-in-out infinite alternate;
+        
+    }
+    @keyframes fadeIn{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .row1{
+        display: flex;
+    }   
+    .column1{
+        margin-left: 90px;
+    }
+    .connect{
+        margin-left: 200px; 
+    }
+    @media (max-width:600px){
+        .row1{
+            display: inline;
+        }
+        .txt1{
+            margin-right: 800px;
+            margin-left: 2px;
+        }
+        .container11{
+            margin-left: 2px;
+            margin-right: 2px;
+        }
+    }
+    
+    .price{
+        color:black;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: rgb(83, 1, 26)">
+        <div class="container-fluid">
+            <a  class="navbar-brand" href="#" style="color: blue;"><img src="images/rest.jpg" alt="" width="80px" height="80px"
+                style="border-radius: 10%;"><h1 class="ms-1 headline" style="color: white;" >Vamshi Restaurant</h1></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#Apple" aria-controls="Apple" aria-expanded="false" aria-label="Toggle Navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="Apple">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" style="color: rgb(211, 146, 6) ;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html" style="color: rgb(211, 146, 6) ;">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" style="color: rgb(211, 146, 6) ;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reserved.html" style="color: rgb(211, 146, 6) ;">Reserve</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+    <div class="container11 txt1">
+        <img class="iconsimg1" src="images/rem1.png"  alt="" height="300px" width="150px" style="margin-top:2px;">
+        <div class="iconstxt">
+            <h1 style="font-family: 'Times New Roman', Times, serif;text-align:center;font: size 50px;">Digital Menu Card</h1>
+        </div>
+        <img class="iconsimg" src="images/rem1.png" alt="" height="300px" width="150px">
+    </div>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="column  col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Chicken Pasta.webp" class="img-fluid"  alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$26</h2>
+                <h2>Chicken Pasta</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img  src="images/crab.webp" class="img-fluid"  alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$32</h2>
+                <h2 > Egg'sCrab</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Egg Po'Boys.webp" class="img-fluid"  alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$21</h2>
+                <h2>Egg Po'Boys</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-between">
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Summer Roll.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center; height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$35</h2>
+                <h2>Summer Roll</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Spring Roll.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$30</h2>
+                <h2>Spring Roll</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Egg Roll.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$32</h2>
+                <h2>Egg Roll</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-between">
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Beef Cabbage.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$29</h2>
+                <h2>Beef Cabbage</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Mine Thai Curry.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$33</h2>
+                <h2>Mine Thai</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Pad Thai Stir-Fry.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$38</h2>
+                <h2>Pad Thai Stir</h2>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-between">
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Pecans and Cherries.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$41</h2>
+                <h2>PecansCherries</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Pomegranate Glaze.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$34</h2>
+                <h2> Glaze</h2>
+            </div>
+            <div class="column col-lg-3 col-md-6 col-sm-12">
+                <img src="images/Pomegranate Syrup.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                <h2 class="price">$29</h2>
+                <h2> Syrup</h2>
+            </div>
+        </div>
+        <br><br>
+            <div class="row justify-content-between">
+                <div class="column col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Portobello Pot Roast.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                    <h2 class="price">$46</h2>
+                    <h2>Roast</h2>
+                </div>
+                <div class="column col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Ribollita.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                    <h2 class="price">$39</h2>
+                    <h2>Ribollita</h2>
+                </div>
+                <div class="column col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Sweet Potatoes with Bacon.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                    <h2 class="price">$22</h2>
+                    <h2>Bacon</h2>
+                </div>
+            </div>
+            <br><br>
+            <div class="row justify-content-between">
+                <div class="column col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Tofu Skewers.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                    <h2 class="price">$44</h2>
+                    <h2>Tofu Skewers</h2>
+                </div>
+                <div class="column col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Garlic Korean.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                    <h2 class="price">$40</h2>
+                    <h2> Korean</h2>
+                </div>
+                <div class="column col-lg-3 col-md-6 col-sm-12">
+                    <img src="images/Thai Chicken Tacos.webp" class="img-fluid" alt="" style="border-radius: 30px;align-items:center;height:300px;margin-bottom:10px; width:100%">
+                    <h2 class="price">$31</h2>
+                    <h2>Chicken Tacos</h2>
+                </div>
+            </div>
+    </div><br><br><br><br>
+    <div class="container1">
+        <div class="row1">
+            <div class="column1"><br>
+                <h3>BentoBox</h3>
+                <ul>
+                    <li>Life at BentoBox</li>
+                    <li>Careers</li>
+                    <li>Customer stories</li>
+                    <li>Platform Status</li>
+                    <li>DEI</li>
+                </ul>
+            </div>
+            <div class="column1"><br>
+                <h3>Contact</h3>
+                <ul>
+                    <li>Sing Up</li>
+                    <li>Call Now</li>
+                    <li>Watch the Demo</li>
+                    <li>Refer a Restaurant</li>
+                    <li>Become a Partner</li>
+                    <li>Referal Temrs</li>
+                </ul>
+            </div>
+            <div class="column1"><br>
+                <h3>Support</h3>
+                <ul>
+                    <li>FAQs</li>
+                    <li>Contact Support</li>
+                    <li>Help Center</li>
+                    <li>Privacy policy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+        <div class="connect">
+            <h3>Connect</h3>
+            <img src="images/insta.png" alt="" height="5%" width="5%" style="border-radius: 100%;">
+            <img src="images/facebook.png" alt="" height="5%" width="5%" style="border-radius: 100%;">
+            <img src="images/lingin.png" alt="" height="5%" width="5%" style="border-radius: 100%;">
+            <img src="images/tele.png" alt="" height="5%" width="5%" style="border-radius: 100%;">
+            <img src="images/twiter.png" alt="" height="5%" width="5%" style="border-radius: 100%;">
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+</html>
